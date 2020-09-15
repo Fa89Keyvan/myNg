@@ -1,6 +1,27 @@
-<ul>
-    <li ng-repeat="phone in $ctrl.phones">
-        <span>{{phone.name}}</span>
-        <p>{{phone.snippet}}</p>
-    </li>
-</ul>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="form-group">
+                <label>Search</label>
+                <input type="text" class="form-control" ng-model="$ctrl.query" />
+            </div>
+            <div class="form-group">
+                <label>Order</label>
+                <select ng-model="$ctrl.order" class="form-control">
+                    <option value="name">Alphabetical</option>
+                    <option value="age">Newest</option>
+                    <option value="-age">Oldest</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-sm-5">
+            <ul class="list-group">
+                <li class="list-group-item" ng-repeat="phone in $ctrl.phones | filter:$ctrl.query | orderBy:$ctrl.order">
+                    <span>{{phone.name}}</span>
+                    <p>{{phone.snippet}} age: {{phone.age}}</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

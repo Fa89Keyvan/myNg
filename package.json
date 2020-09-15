@@ -1,0 +1,27 @@
+{
+  "name": "myng",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000m\u0000y\u0000N\u0000g\u0000\r\u0000 \u0000",
+  "main": "index.html",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fa89Keyvan/myNg.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fa89Keyvan/myNg/issues"
+  },
+  "homepage": "https://github.com/Fa89Keyvan/myNg#readme",
+  "dependencies": {
+    "angular": "^1.8.0",
+    "angular-route": "^1.8.0",
+    "bootstrap": "^4.5.2"
+  }
+}
