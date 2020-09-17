@@ -9,7 +9,7 @@ angular
             self.order = "name";
 
             $http
-                .get("app/phone-list/phones.json")
+                .get("api/phones.json")
                 .then(function (response) {
                     self.phones = response.data;
                 });

@@ -1,7 +1,37 @@
 <div class="row">
     <div class="col-sm-6">
-        <section>
-            <h4>TBD: Detail view for phoneId: <b>{{$ctrl.phoneId}}</b></h4>
+        <section ng-show="$ctrl.phoneDetail !== null">
+            <h1>{{$ctrl.phoneDetail.name}}</h1>
+            <p>
+                <h2>Storage</h2>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <b>Flash: </b><span>{{$ctrl.phoneDetail.storage.flash}}</span>
+                    </li>
+                    <li class="list-group-item">
+                        <b>Ram: </b><span>{{$ctrl.phoneDetail.storage.ram}}</span>
+                    </li>
+                </ul>
+            </p>
+            <p>
+                <h2>Software</h2>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <b>OS: </b><span>{{$ctrl.phoneDetail.android.os}}</span>
+                    </li>
+                    <li class="list-group-item">
+                        <b>UI: </b><span>{{$ctrl.phoneDetail.android.ui}}</span>
+                    </li>
+                </ul>
+            </p>
+            <p>
+                <h2>Aditional features</h2>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <span>{{$ctrl.phoneDetail.additionalFeatures}}</span>
+                    </li>
+                </ul>
+            </p>
         </section>
     </div>
 </div>
