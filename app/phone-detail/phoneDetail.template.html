@@ -2,6 +2,7 @@
     <div class="col-sm-6">
         <section ng-show="$ctrl.phoneDetail !== null">
             <h1>{{$ctrl.phoneDetail.name}}</h1>
+            <h2>Is avialable: <span>{{$ctrl.phoneDetail.availability | checkmark}}</span></h2>
             <p>
                 <h2>Storage</h2>
                 <ul class="list-group">

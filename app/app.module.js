@@ -2,7 +2,8 @@ angular
     .module("phonecatApp", [
         "ngRoute",
         "phoneList",
-        "phoneDetail"
+        "phoneDetail",
+        "core"
     ])
     .config(["$routeProvider", function ($routeProvider) {
 

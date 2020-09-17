@@ -15,5 +15,6 @@
 	"storage": {
 		"flash": "16384MB",
 		"ram": "512MB"
-	}
+	},
+	"availability": true
 }
