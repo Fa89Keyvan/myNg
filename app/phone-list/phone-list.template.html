@@ -16,9 +16,16 @@
     <div class="col-sm-5">
         <ul class="list-group">
             <li class="list-group-item" ng-repeat="phone in $ctrl.phones | filter:$ctrl.query | orderBy:$ctrl.order">
-                <span>{{phone.name}}</span>
-                <p>{{phone.snippet}} age: {{phone.age}}</p>
-                <a href="#!/phones/{{phone.phoneId}}">Details</a>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img ng-src="{{phone.imageUrl}}" class="img img-thumbnail"/>
+                    </div>
+                    <div class="col-sm-9">
+                        <span>{{phone.name}}</span>
+                        <p>{{phone.snippet}} age: {{phone.age}}</p>
+                        <a href="#!/phones/{{phone.id}}">Details</a>
+                    </div>
+                </div>
             </li>
         </ul>
     </div>

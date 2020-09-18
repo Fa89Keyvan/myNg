@@ -12,7 +12,7 @@ angular
             model.phoneId = $routeParams.phoneId;
             model.phoneDetail = null;
 
-            $http.get("api/phone-" + model.phoneId + ".json").then(function (response) {
+            $http.get("api/" + model.phoneId + ".json").then(function (response) {
 
                 model.phoneDetail = response.data;
 
