@@ -21,7 +21,9 @@
   "homepage": "https://github.com/Fa89Keyvan/myNg#readme",
   "dependencies": {
     "angular": "^1.8.0",
+    "angular-animate": "^1.8.0",
     "angular-route": "^1.8.0",
-    "bootstrap": "^4.5.2"
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1"
   }
 }

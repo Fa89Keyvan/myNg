@@ -15,7 +15,7 @@
     </div>
     <div class="col-sm-5">
         <ul class="list-group">
-            <li class="list-group-item" ng-repeat="phone in $ctrl.phones | filter:$ctrl.query | orderBy:$ctrl.order">
+            <li class="list-group-item phone-list-item" ng-repeat="phone in $ctrl.phones | filter:$ctrl.query | orderBy:$ctrl.order">
                 <div class="row">
                     <div class="col-sm-3">
                         <img ng-src="{{phone.imageUrl}}" class="img img-thumbnail"/>
